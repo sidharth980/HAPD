@@ -1,8 +1,11 @@
 #include "radar.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(){
-    radar("data.csv");
+    int num = 180;
+    string s = "csv/"+to_string(num)+".csv";
+    radar(s);
 }
