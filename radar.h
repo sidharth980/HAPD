@@ -83,7 +83,7 @@ void radar(string file_path){
             temp.push_back(data[j][l+k]);
             vector<complex<double>> x = FFT(temp);
             if(x[0].real()>12000){
-                    cout<<x[0].real()<<" ("<<(l*180/256)-90<<","<<j*50/256<<")"<<endl;
+                    cout<<x[0].real()<<" ("<<(l*180/256)-90<<"deg ,"<<j*50/256<<"m)"<<endl;
                 }
             }
         }
