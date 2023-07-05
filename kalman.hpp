@@ -38,6 +38,9 @@ public:
             return pos_ + vel_;
         }
     }
+    double exp(){
+        return vel_+pos_;
+    }
 
 private:
     double vel_; // Velocity
@@ -45,13 +48,13 @@ private:
     double pos_; // Position
 };
 
-int main() {
-    KFilter kf;
-    double measurement[] = {5,6,8,10,12,14,16,20,24,28};
-    for(int i = 0;i<10;i++){
-        double pred = kf.Update(measurement[i]);
-        cout<<measurement[i]<<" : "<<pred<<endl;
-    }
-    // Update with x = 5
-    return 0;
-}
+// int main() {
+//     KFilter kf;
+//     double measurement[] = {5,6,8,10,12,14,16,20,24,28};
+//     for(int i = 0;i<10;i++){
+//         double pred = kf.Update(measurement[i]);
+//         cout<<measurement[i]<<" : "<<pred<<endl;
+//     }
+//     // Update with x = 5
+//     return 0;
+// }

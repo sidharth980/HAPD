@@ -25,6 +25,6 @@ def npm_to_csv(num,date):
     # dff.to_csv('dataoutpy.csv',index=False)
 
 
-
-date = "2019-09-16-12-52-12"
-npm_to_csv(180,date)
+date = "2020-02-28-12-12-16"
+for x in range(30,90):
+    npm_to_csv(x,date)
